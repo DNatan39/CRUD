@@ -1,3 +1,7 @@
+<?php
+// echo password_hash('666',  PASSWORD_DEFAULT);
+?>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -9,21 +13,21 @@
 </head>
 
 <body class="d-flex justify-content-center align-items-center">
-    <form action="login.php" method="post" class="d-flex justify-content-center align-items-center flex-column border border-warning rounded bg-dark p-3">
+    <form action="register.php" method="post" class="d-flex justify-content-center align-items-center flex-column border border-warning rounded bg-dark p-3">
 
         <div class="d-flex justify-content-center align-items-start flex-column">
             <label for="intervention" class="bg-warning mb-2 rounded p-1 w-100">Votre intervention :</label>
-            <input type="text" name="intevention" id="intevention" placeholder="saisiez votre intervention" class="w-100 mb-2">
+            <input type="text" name="intevention" placeholder="saisiez votre intervention" class="w-100 mb-2">
         </div>
 
         <div class="d-flex justify-content-center align-items-start flex-column">
             <label for="etage" class="bg-warning mb-2 rounded p-1 w-100">L'étage :</label>
-            <input type="text" name="etage" id="etage" placeholder="numéro de l'étage" class="w-100 mb-2">
+            <input type="text" name="etage" placeholder="numéro de l'étage" class="w-100 mb-2">
         </div>
 
         <div class="d-flex justify-content-center align-items-start flex-column">
             <label for="dateintervention" class="bg-warning mb-2 rounded p-1 w-100">Votre date d'intervention :</label>
-            <input type="date" name="dateintervention" id="dateintervention" class="w-100 mb-2">
+            <input type="date" name="dateintervention" class="w-100 mb-2">
         </div>
         <section>
             <button type="submit" name="action" value="create" class="btn btn-warning m-3">Create</button>

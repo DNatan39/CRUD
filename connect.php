@@ -11,16 +11,12 @@ function connect(){
     }
 }
 function login(){
-    $findUser = connect()->prepare('SELECT * FROM user WHERE login_user = :login_user');
-    $findUser->bindParam(':login_user', $_POST['username'], PDO::PARAM_STR);
+    $findUser = connect()->prepare('SELECT * FROM user WHERE id_user = :id_user');
+    $findUser->bindParam(':id_user', $_POST['username'], PDO::PARAM_STR);
     $findUser->execute();
     $user = $findUser->fetch();
- 
-    //$user && password_verify($_POST['password'], $user['password_user'])
-    //le mot de passe est alex
-    //$user && password_verify(alex, $2y$10$6BcBM4oinhbyHIL09w.j/eIFwYkCc499VDIZIy7LJ1PRU4GO2ynQS])
-    if ($user && password_verify($_POST['password'], $user['pass_user'])) {
-        $_SESSION['nom_user'] = $user['name_user']; 
+    if ($user && password_verify($_POST['password'], $user['id_pass'])) {
+        $_SESSION['id_user'] = $user['id_user']; 
         header('Location: ./register.php');  
         
     } else {
