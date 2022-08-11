@@ -12,12 +12,13 @@
 
 <body class="d-flex justify-content-center align-items-center">
     <section class="container-fluid d-flex justify-content-center align-items-center flex-column">
-        <input type="date">
-        <ul class="list-group col-5">
-            <li class="list-group-item list-group-item-warning">An item</li>
-            <li class="list-group-item list-group-item-warning">A second item</li>
-            <li class="list-group-item list-group-item-warning">A third item</li>
+        <input type="date" class="col-1 mb-2 rounded" id="date">
+        <ul class="list-group flex-row list-unstyled">
+            <li class="p-2 m-2 bg-danger text-white rounded">An Item</li>
+            <li class="p-2 m-2 bg-danger text-white rounded">Two Item</li>
+            <li class="p-2 m-2 bg-danger text-white rounded">Three Item</li>
         </ul>
+        <a href="register.php" class="btn btn-warning m-3">Créer</a>
     </section>
 
 

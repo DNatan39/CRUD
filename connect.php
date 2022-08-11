@@ -29,7 +29,7 @@
             } else {
                 echo 'Error during registration';
             }
-        }
+    }
 
     function login(){
         $findUser = connect()->prepare('SELECT * FROM user WHERE id_user = :id_user');

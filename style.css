@@ -1,8 +1,1 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-    background: black;
-}
+*{box-sizing: border-box;margin: 0;padding: 0;}body{background-image: url(sun.jpg);background-position: center;background-size: cover;}body:after{content: '';width: 100vw;height: 100vh;position: absolute;top: 0;background-color: #00000070;z-index: -1;}

@@ -16,25 +16,25 @@ if (!isset($_SESSION['user'])) {
 </head>
 
 <body class="d-flex justify-content-center align-items-center">
-    <form action="register.php" method="post" class="d-flex justify-content-center align-items-center flex-column border border-warning rounded bg-dark p-3">
+    <form action="register.php" method="post" class="d-flex justify-content-center align-items-center flex-column border border-danger rounded bg-dark p-3">
 
         <div class="col-12 d-flex justify-content-center align-items-start flex-column">
-            <label for="intervention" class="bg-warning mb-2 rounded p-1 w-100">Votre intervention :</label>
+            <label for="intervention" class="bg-danger mb-2 rounded p-1 w-100">Votre intervention :</label>
             <input type="text" name="intervention" id="intevention" placeholder="saisiez votre intervention" class="w-100 mb-2">
         </div>
 
         <div class="col-12 d-flex justify-content-center align-items-start flex-column">
-            <label for="etage" class="bg-warning mb-2 rounded p-1 w-100">L'étage :</label>
+            <label for="etage" class="bg-danger mb-2 rounded p-1 w-100">L'étage :</label>
             <input type="text" name="etage" id="etage" placeholder="numéro de l'étage" class="w-100 mb-2">
         </div>
 
         <div class="col-12 d-flex justify-content-center align-items-start flex-column">
-            <label for="dateintervention" class="bg-warning mb-2 rounded p-1 w-100">Votre date d'intervention :</label>
+            <label for="dateintervention" class="bg-danger mb-2 rounded p-1 w-100">Votre date d'intervention :</label>
             <input type="date" name="dateintervention" id="dateintervention" class="w-100 mb-2">
         </div>
         <section>
-            <button type="submit" name="action" value="register" class="btn btn-warning m-3">Register</button>
-            <a href="table.php" class="btn btn-warning m-3">Tableau des interventions</a>
+            <button type="submit" name="action" value="register" class="btn btn-danger m-3">Register</button>
+            <a href="table.php" class="btn btn-danger m-3">Tableau des interventions</a>
         </section>
 
     </form>
