@@ -25,12 +25,11 @@
         $estceok = $ajouter->execute();
         $ajouter->debugDumpParams();
             if($estceok){
-                header('Location: ./register.php');   
+                header('Location: ./register.php');
             } else {
                 echo 'Error during registration';
             }
     }
-
     function login(){
         $findUser = connect()->prepare('SELECT * FROM user WHERE id_user = :id_user');
         $findUser->bindParam(':id_user', $_POST['username'], PDO::PARAM_STR);

@@ -25,7 +25,7 @@ if (!isset($_SESSION['user'])) {
 
         <div class="col-12 d-flex justify-content-center align-items-start flex-column">
             <label for="etage" class="bg-danger mb-2 rounded p-1 w-100">L'étage :</label>
-            <input type="text" name="etage" id="etage" placeholder="numéro de l'étage" class="w-100 mb-2">
+            <input type="number" name="etage" id="etage" placeholder="numéro de l'étage" class="w-100 mb-2">
         </div>
 
         <div class="col-12 d-flex justify-content-center align-items-start flex-column">

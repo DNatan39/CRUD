@@ -1,3 +1,22 @@
+<?php
+include("connect.php");
+function retrieve(){
+    try{
+        $str = connect()->prepare("SELECT * FROM section");
+        $str->execute();
+        $return = $str->fetchAll();
+        for($i=0;$i< count($return);$i++) {
+            $index = strval($i);
+            echo '<p>' .$return[$index]['id_intervention'].', réalisé le '.$return[$index]['id_date']." à l'étage ".$return[$index]['id_etage'];
+        }
+    } catch(PDOException $th){
+        echo $th;
+    }
+}
+
+?>
+
+
 <html lang="fr">
 
 <head>
