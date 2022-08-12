@@ -30,6 +30,19 @@
                 echo 'Error during registration';
             }
     }
+    function retrieve(){
+        try{
+            $str = connect()->prepare("SELECT * FROM section");
+            $str->execute();
+            $return = $str->fetchAll();
+            for($i=0;$i< count($return);$i++) {
+                $index = strval($i);
+                echo '<li class="p-2 m-2 text-white rounded"><p>Intervention : ' .$return[$index]['id_intervention'].'</p><p>réalisé le : '.$return[$index]['id_date']."</p><p>À l'étage : ".$return[$index]['id_etage'].'</p></li>';
+            }
+        } catch(PDOException $th){
+            echo $th;
+        }
+    }
     function login(){
         $findUser = connect()->prepare('SELECT * FROM user WHERE id_user = :id_user');
         $findUser->bindParam(':id_user', $_POST['username'], PDO::PARAM_STR);
