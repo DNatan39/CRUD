@@ -85,6 +85,32 @@ body:after {
  outline:none;
  border-bottom:1px solid #b69649;	
 }
+.input-container1{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container1 label{
+	position:absolute;
+	top:-15px;
+	left:0px;
+	font-size:16px;
+	color:#fff;
+	transition: all 0.5s ease-in-out;
+}
+.input-container1 input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+.input-container1 input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #b69649;	
+}
 .btn{
 	color:#fff;
 	background-color:#b69649;
@@ -129,4 +155,10 @@ li{
 }
 .outilfilter{
 	color: #000;
+}
+.trash{
+	top: 50%;
+	right: 5%;
+	background: none;
+    border: none;
 }

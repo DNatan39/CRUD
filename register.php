@@ -12,9 +12,10 @@ if (!isset($_SESSION['user'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href=icon.jpg">
+    <link rel="icon" type="image/jpg" href="icon.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>╰☆☆ 𝕄𝕖𝕟𝕒𝕣𝕕 ☆☆╮</title>
 </head>
@@ -39,7 +40,7 @@ if (!isset($_SESSION['user'])) {
     </form>	
 </div>
 <section class="box2 ">
-        <div class="container-fluid filter d-flex align-items-center p-0">
+        <div class="input-container1 container-fluid filter d-flex align-items-center p-0">
         <p class="m-0 mx-2">DATE:</p>
             <input type="date" value="date" class="outilfilter m-2 rounded">
             <p class="m-0 mx-2">L'ÉTAGE:</p>
