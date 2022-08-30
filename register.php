@@ -4,7 +4,11 @@ include("connect.php");
 if (!isset($_SESSION['user'])) {
     header('Location: login.php');
 }
-
+if (isset($_GET['id'])) {
+    $id=$_GET['id'];
+    $delete=connect()->prepare("DELETE FROM `section` WHERE `id`='$id'");
+    $delete->execute();
+}
 ?>
 
 

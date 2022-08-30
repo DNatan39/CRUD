@@ -155,6 +155,11 @@ li{
 }
 .outilfilter{
 	color: #000;
+	background-color: #b69649;
+}
+.outilfilter option{
+	color: #000 !important;
+	background-color: #b69649;
 }
 .trash{
 	top: 50%;
