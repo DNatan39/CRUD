@@ -4,11 +4,7 @@ include("connect.php");
 if (!isset($_SESSION['user'])) {
     header('Location: login.php');
 }
-if (isset($_GET['id'])) {
-    $id=$_GET['id'];
-    $delete=connect()->prepare("DELETE FROM `section` WHERE `id`='$id'");
-    $delete->execute();
-}
+delete();
 ?>
 
 
@@ -45,7 +41,7 @@ if (isset($_GET['id'])) {
 </div>
 <section class="box2 ">
         <div class="input-container1 container-fluid filter d-flex align-items-center p-0">
-        <p class="m-0 mx-2">DATE:</p>
+            <p class="m-0 mx-2">DATE:</p>
             <input type="date" value="date" class="outilfilter m-2 rounded">
             <p class="m-0 mx-2">L'ÉTAGE:</p>
             <span class="px-1">

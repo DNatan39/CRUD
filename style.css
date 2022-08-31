@@ -23,7 +23,7 @@ body:after {
     height: 100vh;
     position: absolute;
     top: 0;
-    background-color: #00000030;
+    background-color: #00000010;
     z-index: -1;
 }
 .main{
@@ -124,6 +124,20 @@ body:after {
 	cursor:pointer;
 	position:relative;
 }
+.btn1{
+	color:#fff;
+	background-color:#b69649;
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:50px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+	float: right;
+}
 .input-container input:focus ~ label,
 .input-container input:valid ~ label{
 	top:-12px;
@@ -156,14 +170,24 @@ li{
 .outilfilter{
 	color: #000;
 	background-color: #b69649;
+	border-radius: 10px;
+}
+.outilfilter:focus-visible{
+	outline: none;
 }
 .outilfilter option{
 	color: #000 !important;
 	background-color: #b69649;
 }
 .trash{
-	top: 50%;
+	bottom: 5%;
 	right: 5%;
+	background: none;
+    border: none;
+}
+.trash1{
+	bottom: 5%;
+	right: 10%;
 	background: none;
     border: none;
 }
